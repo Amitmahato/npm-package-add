@@ -1,0 +1,8 @@
+{
+  "name": "npm-package-add",
+  "version": "1.0.0",
+  "description": "Demonstration of building a npm package",
+  "main": "index.js",
+  "author": "Amit Mahato",
+  "license": "MIT"
+}
