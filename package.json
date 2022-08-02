@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Demonstration of building a npm package",
   "main": "index.js",
+  "type": "commonjs",
   "author": "Amit Mahato",
   "license": "MIT"
 }
