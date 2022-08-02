@@ -4,7 +4,7 @@ const add = (a, b) => {
 };
 
 // How should I export this add function so that I can use it inside index.js?
-module.exports.sum = add;
+// module.exports.sum = add;
 /** Now the question is why module.exports and not export { sum: add } or export default add
  *  - Since this file is our local file in the client application,
  *  - it referes to the neareset `package.json`, which is in the currend directory
@@ -12,4 +12,7 @@ module.exports.sum = add;
  **/
 
 // OR
-// export default add;
+export { add as sum };
+/** Now since the nearest package.json is configured with the value of `module` in `type` field,
+ *  we can use ES module way to export from a module file
+ **/
