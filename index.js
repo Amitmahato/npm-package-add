@@ -5,3 +5,6 @@
 // Case 1 - CommonJS, when package.json doesn't specify the type of specifies the value of commonjs in type field
 const add = require("add");
 console.log("2 + 4 = ", add(2, 4));
+
+const { sum } = require("./add");
+console.log("1 + 2 = ", sum(1, 2));
